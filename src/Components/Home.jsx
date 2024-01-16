@@ -8,19 +8,19 @@ function Home(){
  
 
  const submitHandler=(e)=>{
-e.preventDefault();
-setTasks([...task,{title,description}]);
+// handle the form submission and add the task to the task array
+ 
  };
 const deleteTask=(i)=>{
     
-    setTasks(task.filter((item,index)=>index!==i));
+    //handle the delete task functionality here
 };
 
 
     return (
     <div className="Container">
-
-        <h1>Daily Goals</h1>
+{/* write something inside h1 tag for example daily goals */}
+        <h1></h1>
 
         <form onSubmit={submitHandler}>
             <input type="text" placeholder="Title"
